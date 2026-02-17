@@ -139,28 +139,39 @@ h1 {
 }
 
 .gradient-text {
-    /* Added White (#FFF) and brightened the mix for better contrast on black */
-    background: linear-gradient(135deg, #FFFFFF, var(--primary-color), #FF55B5, #55FFFF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
-    animation: gradientMove 3s ease infinite;
-    /* Optional: Add a subtle drop shadow to help it pop from the background */
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    /* Create a multi-layer glow that shifts colors */
+    text-shadow:
+        0 0 10px #FED85D,
+        0 0 20px #FF0080,
+        0 0 40px #00DFD8;
+    animation: glowShift 3s ease-in-out infinite alternate;
 }
 
-@keyframes gradientMove {
+@keyframes glowShift {
     0% {
-        background-position: 0% 50%;
+        text-shadow:
+            0 0 5px #FED85D,
+            0 0 10px #FED85D,
+            0 0 20px #FF0080;
     }
 
     50% {
-        background-position: 100% 50%;
+        text-shadow:
+            0 0 5px #FF0080,
+            0 0 10px #FF0080,
+            0 0 20px #00DFD8;
     }
 
     100% {
-        background-position: 0% 50%;
+        text-shadow:
+            0 0 5px #00DFD8,
+            0 0 10px #00DFD8,
+            0 0 20px #FED85D;
     }
 }
 
