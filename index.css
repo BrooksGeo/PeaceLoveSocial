@@ -139,12 +139,15 @@ h1 {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    /* Added White (#FFF) and brightened the mix for better contrast on black */
+    background: linear-gradient(135deg, #FFFFFF, var(--primary-color), #FF55B5, #55FFFF);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
     animation: gradientMove 3s ease infinite;
+    /* Optional: Add a subtle drop shadow to help it pop from the background */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
 @keyframes gradientMove {
