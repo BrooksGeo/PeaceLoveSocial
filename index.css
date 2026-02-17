@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #0d0d0d;
+    --bg-color: #032b1f;
+    /* Funky Deep Green - Easy on the eyes but colorful */
     --text-color: #ffffff;
     --primary-color: #FED85D;
     /* Dandelion Yellow */
@@ -256,7 +257,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0d0d0d;
+    background: var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb {
