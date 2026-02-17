@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Love Social | Our Work</title>
+    <meta name="description" content="Explore our previous events and portfolio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .work-section {
+            padding: 8rem 5% 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            aspect-ratio: 4/3;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .portfolio-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-title {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .portfolio-category {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="glass-header">
+        <nav>
+            <div class="logo">Peace Love Social</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html" class="active">Our Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="work-section">
+            <h1 style="text-align: center; margin-bottom: 1rem; font-size: 3.5rem;">Our <span
+                    class="gradient-text">Portfolio</span></h1>
+            <p style="text-align: center; margin-bottom: 3rem;">A glimpse into the diverse events we've brought to life.
+            </p>
+
+            <div class="portfolio-grid">
+                <!-- Placeholder items -->
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 1</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Wedding</div>
+                        <div class="portfolio-title">Summer Garden Wedding</div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 2</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Corporate</div>
+                        <div class="portfolio-title">Tech Launch Party</div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 3</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Festival</div>
+                        <div class="portfolio-title">City Music Fest</div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 4</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Private Party</div>
+                        <div class="portfolio-title">Rooftop Birthday Bash</div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 5</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Pop-up</div>
+                        <div class="portfolio-title">Daiquiri Bus Stop</div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Event Photo 6</div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Fundraiser</div>
+                        <div class="portfolio-title">Charity Gala</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
