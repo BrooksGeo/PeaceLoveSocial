@@ -265,7 +265,159 @@ h2 {
     border-radius: 5px;
 }
 
-/* Mobile Responsiveness */
+
+
+/* Scroll Animation Classes */
+.hidden-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- New Effects & Services Styles --- */
+
+/* Marquee */
+.marquee-container {
+    background: var(--primary-color);
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    position: relative;
+    z-index: 10;
+    transform: rotate(-1deg);
+    /* Slight jaunty angle */
+    margin: 2rem 0;
+    box-shadow: 0 5px 0 var(--secondary-color);
+}
+
+.marquee-content {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Services Section */
+.services-section {
+    padding: 6rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 0 #000;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 2.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 0 var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0 var(--primary-color);
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--primary-color);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 var(--secondary-color);
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #eee;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Retro Pressed Button Update */
+.btn {
+    /* Existing styles base */
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.1s ease;
+    /* Faster transition for button feeling */
+}
+
+.btn:active {
+    transform: translate(2px, 2px) !important;
+    /* Move down-right */
+    box-shadow: 2px 2px 0 var(--secondary-color) !important;
+    /* Shrink shadow */
+}
+
+/* Mobile Adjustments for Services */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .marquee-container {
+        transform: rotate(0deg);
+        /* Straighten on mobile */
+        margin: 1rem 0;
+    }
+}
+
 @media (max-width: 768px) {
     .glass-header {
         padding: 0.5rem 5%;
