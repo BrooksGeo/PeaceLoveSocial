@@ -8,7 +8,9 @@
     <meta name="description" content="Explore our previous events and portfolio.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <style>
         .work-section {
@@ -25,18 +27,20 @@
         }
 
         .portfolio-item {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--glass-border);
-            border-radius: 15px;
+            background: #000;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             aspect-ratio: 4/3;
+            box-shadow: 5px 5px 0 var(--primary-color);
         }
 
         .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 var(--secondary-color);
+            border-color: var(--secondary-color);
         }
 
         .portfolio-placeholder {
@@ -46,9 +50,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgba(255, 255, 255, 0.3);
+            color: rgba(255, 255, 255, 0.5);
             font-size: 1.5rem;
             font-weight: 600;
+            font-family: var(--font-heading);
         }
 
         .portfolio-overlay {
@@ -57,7 +62,8 @@
             left: 0;
             width: 100%;
             padding: 1.5rem;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 2px solid var(--accent-color);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -67,9 +73,9 @@
         }
 
         .portfolio-title {
-            color: #fff;
-            font-size: 1.25rem;
-            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-family: var(--font-heading);
         }
 
         .portfolio-category {
@@ -77,6 +83,7 @@
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
