@@ -325,6 +325,110 @@ h2 {
     margin: 0 auto;
 }
 
+.pricing-section {
+    padding: 2rem 5% 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.package-card {
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 5px 5px 0 var(--secondary-color);
+}
+
+.package-card.featured {
+    border-color: var(--primary-color);
+    box-shadow: 7px 7px 0 var(--primary-color);
+}
+
+.package-card h3,
+.addons-card h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.package-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.package-price span {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.package-list {
+    list-style: none;
+}
+
+.package-list li {
+    color: #f4f4f4;
+    margin-bottom: 0.7rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.package-list li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.addons-card {
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 5px 5px 0 var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+.scope-notes {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.scope-notes p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: none;
+}
+
+.scope-notes p:last-child {
+    margin-bottom: 0;
+}
+
+.final-cta {
+    padding: 1rem 5% 6rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 0 #000;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
