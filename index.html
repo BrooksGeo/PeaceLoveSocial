@@ -158,6 +158,70 @@
             </div>
         </section>
 
+        <section id="booking" class="booking-section">
+            <div class="section-header">
+                <h2>Book Your <span class="gradient-text">Growth Call</span></h2>
+                <p>Tell us about your business and we will follow up to schedule your 14-day trial kickoff.</p>
+            </div>
+
+            <div class="booking-card">
+                <form class="booking-form" action="https://formsubmit.co/goodtimes@macsdaqs.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Booking Request - Peace Love Social">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-row">
+                        <label for="full_name">Full Name</label>
+                        <input id="full_name" name="Full Name" type="text" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="business_name">Business Name</label>
+                        <input id="business_name" name="Business Name" type="text" required>
+                    </div>
+
+                    <div class="form-row split">
+                        <div>
+                            <label for="phone_number">Phone Number</label>
+                            <input id="phone_number" name="Phone Number" type="tel" required>
+                        </div>
+                        <div>
+                            <label for="email_address">Email Address</label>
+                            <input id="email_address" name="Email Address" type="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="service_interest">Primary Service Interest</label>
+                        <select id="service_interest" name="Primary Service Interest" required>
+                            <option value="">Choose one</option>
+                            <option>Starter Social - $199/month</option>
+                            <option>Growth Social - $449/month</option>
+                            <option>Pro Growth - $899/month</option>
+                            <option>Missed-Call Text-Back Add-On - $129/month + usage</option>
+                            <option>Website Build - $700 one-time</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="biggest_challenge">Biggest Marketing Challenge Right Now</label>
+                        <textarea id="biggest_challenge" name="Biggest Challenge" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-row consent-row">
+                        <label class="checkbox-wrap" for="sms_consent">
+                            <input id="sms_consent" name="SMS Consent" type="checkbox" required>
+                            <span>I agree to be contacted by Peace Love Social about my request. Reply STOP to opt out.
+                                See our <a href="privacy.html">Privacy Policy</a> and <a href="sms-consent.html">SMS
+                                    Terms</a>.</span>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Send Booking Request</button>
+                </form>
+            </div>
+        </section>
+
         <section class="final-cta">
             <h2>Ready to Grow With Less Chaos?</h2>
             <p>Let us build your monthly marketing system so you can focus on running your business.</p>
@@ -169,6 +233,11 @@
 
         <footer>
             <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="sms-consent.html">SMS Consent</a>
+            </div>
         </footer>
 
         <script src="script.js"></script>

@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     // Select elements to animate
     const hiddenElements = document.querySelectorAll(
-        '.service-card, .section-header, .hero-content, .package-card, .addons-card, .scope-notes, .final-cta'
+        '.service-card, .section-header, .hero-content, .package-card, .addons-card, .scope-notes, .booking-card, .final-cta'
     );
 
     hiddenElements.forEach((el) => {
