@@ -383,7 +383,7 @@ h2 {
 .package-card h3,
 .addons-card h3 {
     font-family: var(--font-heading);
-    color: var(--primary-color);
+    color: #000;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
@@ -534,7 +534,7 @@ footer {
 .service-card h3 {
     font-family: var(--font-heading);
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: #000;
     margin-bottom: 1rem;
     letter-spacing: 0.5px;
 }
