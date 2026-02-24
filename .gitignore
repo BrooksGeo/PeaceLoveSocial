@@ -4,3 +4,12 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
+
+# Keep local ops/automation out of website repo
+automation/
+clients/
+templates/
+CLIENT_OPERATIONS_INDEX.md
+keys.txt
+log1.txt
+keys copy.txt
