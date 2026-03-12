@@ -9,66 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <style>
-        .legal-section {
-            padding: 8rem 5% 4rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .legal-card {
-            background: rgba(0, 0, 0, 0.55);
-            border: 2px solid var(--accent-color);
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 5px 5px 0 var(--secondary-color);
-        }
-
-        .legal-card h2 {
-            margin-top: 1.5rem;
-            margin-bottom: 0.7rem;
-            font-size: 1.8rem;
-        }
-
-        .legal-card h2:first-of-type {
-            margin-top: 0;
-        }
-
-        .legal-card p,
-        .legal-card li {
-            font-size: 1rem;
-            margin-bottom: 0.9rem;
-            max-width: none;
-        }
-
-        .legal-card ul {
-            margin-left: 1.2rem;
-        }
-    </style>
 </head>
 
-<body>
-    <header class="glass-header">
-        <nav>
-            <a href="index.html" class="logo-link"><img src="media/pls.png" alt="Peace Love Social Logo" class="logo-img"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Our Work</a></li>
-            </ul>
+<body class="site-page interior-page legal-page">
+    <div class="site-bg">
+        <div class="ambient-orb orb-one"></div>
+        <div class="ambient-orb orb-two"></div>
+        <div class="ambient-orb orb-three"></div>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
+                <span class="logo-mark">PLS</span>
+                <span class="logo-copy">
+                    <span class="logo-name">Peace Love Social</span>
+                    <span class="logo-tag">Boutique social media studio</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-shell">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                </ul>
+                <a class="nav-cta" href="index.html#booking">Book a Call</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="legal-section">
-            <h1>Privacy <span class="gradient-text">Policy</span></h1>
-            <div class="legal-card">
+        <section class="page-hero legal-hero" data-reveal="hero">
+            <div class="page-hero-copy">
+                <p class="eyebrow">Legal</p>
+                <h1>Privacy policy</h1>
+                <p>How Peace Love Social collects, uses, and protects basic inquiry and client information.</p>
+            </div>
+        </section>
+
+        <section class="page-shell legal-shell">
+            <article class="legal-card editorial-panel" data-reveal="card">
                 <p><strong>Last Updated:</strong> February 18, 2026</p>
-                <p>Peace Love Social collects only the information needed to respond to inquiries, deliver services, and
-                    support client communication workflows.</p>
+                <p>Peace Love Social collects only the information needed to respond to inquiries, deliver services,
+                    and support client communication workflows.</p>
 
                 <h2>Information We Collect</h2>
                 <ul>
@@ -93,22 +85,29 @@
                     where practical.</p>
 
                 <h2>Your Choices</h2>
-                <p>You may request updates or deletion of your contact information by emailing
-                    goodtimes@macsdaqs.com.</p>
+                <p>You may request updates or deletion of your contact information by emailing goodtimes@macsdaqs.com.
+                </p>
 
                 <h2>Contact</h2>
                 <p>Peace Love Social<br>La Grange, TX<br>goodtimes@macsdaqs.com<br>(979) 702-3269</p>
-            </div>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <img src="media/pls.png" alt="Peace Love Social Logo" class="footer-logo">
-        <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="sms-consent.html">SMS Consent</a>
+    <footer class="site-footer">
+        <div class="footer-panel">
+            <div>
+                <p class="eyebrow">Peace Love Social</p>
+                <h2>The boutique studio approach to content, websites, and automation.</h2>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sms-consent.html">SMS Consent</a>
+                </div>
+            </div>
         </div>
     </footer>
 

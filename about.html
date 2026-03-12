@@ -10,94 +10,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <style>
-        .about-section {
-            padding: 8rem 5% 4rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .about-card {
-            background: rgba(0, 0, 0, 0.6);
-            border: 2px solid var(--accent-color);
-            box-shadow: 8px 8px 0 var(--secondary-color);
-            border-radius: 15px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            backdrop-filter: blur(5px);
-        }
-
-        .about-card h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            text-shadow: 2px 2px 0 #000;
-        }
-
-        .about-card p {
-            font-size: 1.1rem;
-            color: #fff;
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .highlight {
-            color: var(--accent-color);
-            font-weight: 700;
-        }
-    </style>
 </head>
 
-<body>
-    <header class="glass-header">
-        <nav>
-            <a href="index.html" class="logo-link"><img src="media/pls.png" alt="Peace Love Social Logo" class="logo-img"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="work.html">Our Work</a></li>
-            </ul>
+<body class="site-page interior-page">
+    <div class="site-bg">
+        <div class="ambient-orb orb-one"></div>
+        <div class="ambient-orb orb-two"></div>
+        <div class="ambient-orb orb-three"></div>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
+                <span class="logo-mark">PLS</span>
+                <span class="logo-copy">
+                    <span class="logo-name">Peace Love Social</span>
+                    <span class="logo-tag">Boutique social media studio</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-shell">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                </ul>
+                <a class="nav-cta" href="index.html#booking">Book a Call</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="about-section">
-            <h1 style="text-align: center; margin-bottom: 3rem; font-size: 3.5rem;">Our <span
-                    class="gradient-text">Story</span></h1>
+        <section class="page-hero" data-reveal="hero">
+            <div class="page-hero-copy">
+                <p class="eyebrow">About the studio</p>
+                <h1>A warm, strategic creative partner for brands that need polish and follow-through.</h1>
+                <p>Peace Love Social was built to give small businesses a sharper online presence, clearer execution,
+                    and systems that feel more premium than their size would suggest.</p>
+            </div>
+        </section>
 
-            <div class="about-card">
+        <section class="page-shell about-grid">
+            <article class="editorial-panel" data-reveal="card">
+                <p class="eyebrow">Our story</p>
                 <h2>Welcome to Peace Love Social</h2>
                 <p>Peace Love Social is a small-town creative and automation studio built for real small businesses. We
                     blend personality and professionalism so your brand can stand out without looking chaotic. You get
                     clear strategy, reliable execution, and systems that free up your time.</p>
-            </div>
+            </article>
 
-            <div class="about-card">
-                <h2>What We Actually Do</h2>
-                <p>We handle content creation, campaign planning, website refreshes, and follow-up automation. That means
-                    your business can show up consistently, convert more inquiries, and look like a brand people trust.
-                    No fluff, no random posting, no complicated handoff.</p>
-            </div>
+            <article class="editorial-panel offset-panel" data-reveal="card">
+                <p class="eyebrow">What we do</p>
+                <h2>Practical marketing with a more elevated finish.</h2>
+                <p>We handle content creation, campaign planning, website refreshes, and follow-up automation. That
+                    means your business can show up consistently, convert more inquiries, and look like a brand people
+                    trust. No fluff, no random posting, no complicated handoff.</p>
+            </article>
 
-            <div class="about-card">
-                <h2>Our Promise</h2>
-                <p>We keep things simple, transparent, and measurable. You will always know what we are doing, why we are
-                    doing it, and what changed as a result. Creative vibe on the outside, disciplined systems behind the
-                    scenes.</p>
-            </div>
+            <article class="editorial-panel wide-panel" data-reveal="card">
+                <p class="eyebrow">Our promise</p>
+                <h2>Creative on the surface. Disciplined underneath.</h2>
+                <p>We keep things simple, transparent, and measurable. You will always know what we are doing, why we
+                    are doing it, and what changed as a result. The goal is a brand presence that feels intentional and
+                    premium while the backend stays efficient and easy to manage.</p>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <img src="media/pls.png" alt="Peace Love Social Logo" class="footer-logo">
-        <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="sms-consent.html">SMS Consent</a>
+    <footer class="site-footer">
+        <div class="footer-panel">
+            <div>
+                <p class="eyebrow">Peace Love Social</p>
+                <h2>The boutique studio approach to content, websites, and automation.</h2>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sms-consent.html">SMS Consent</a>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -10,159 +10,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <style>
-        .work-section {
-            padding: 8rem 5% 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .portfolio-item {
-            background: #000;
-            border: 2px solid var(--primary-color);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            aspect-ratio: 4/3;
-            box-shadow: 5px 5px 0 var(--primary-color);
-        }
-
-        .portfolio-item:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: 8px 8px 0 var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
-
-        .portfolio-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 1.5rem;
-            font-weight: 600;
-            font-family: var(--font-heading);
-        }
-
-        .portfolio-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 1.5rem;
-            background: rgba(0, 0, 0, 0.8);
-            border-top: 2px solid var(--accent-color);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
-        }
-
-        .portfolio-title {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            font-family: var(--font-heading);
-        }
-
-        .portfolio-category {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-        }
-    </style>
 </head>
 
-<body>
-    <header class="glass-header">
-        <nav>
-            <a href="index.html" class="logo-link"><img src="media/pls.png" alt="Peace Love Social Logo" class="logo-img"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html" class="active">Our Work</a></li>
-            </ul>
+<body class="site-page interior-page">
+    <div class="site-bg">
+        <div class="ambient-orb orb-one"></div>
+        <div class="ambient-orb orb-two"></div>
+        <div class="ambient-orb orb-three"></div>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
+                <span class="logo-mark">PLS</span>
+                <span class="logo-copy">
+                    <span class="logo-name">Peace Love Social</span>
+                    <span class="logo-tag">Boutique social media studio</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-shell">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html" class="active">Our Work</a></li>
+                </ul>
+                <a class="nav-cta" href="index.html#booking">Book a Call</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="work-section">
-            <h1 style="text-align: center; margin-bottom: 1rem; font-size: 3.5rem;">Our <span
-                    class="gradient-text">Work</span></h1>
-            <p style="text-align: center; margin-bottom: 3rem;">How we help small businesses look better, respond faster,
-                and grow with less manual effort.
-            </p>
+        <section class="page-hero" data-reveal="hero">
+            <div class="page-hero-copy">
+                <p class="eyebrow">Selected capabilities</p>
+                <h1>Work that combines brand polish, social strategy, and operational clarity.</h1>
+                <p>How we help small businesses look better, respond faster, and grow with less manual effort.</p>
+            </div>
+        </section>
 
+        <section class="page-shell portfolio-section">
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Lead Recovery Setup</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Automation</div>
-                        <div class="portfolio-title">Missed-Call Text-Back Flows</div>
+                <article class="portfolio-card media-card" data-reveal="card">
+                    <div class="portfolio-media image-one"></div>
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Automation</p>
+                        <h2>Missed-call text-back flows</h2>
+                        <p>Lead recovery systems that turn missed moments into active follow-up.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Content Calendar</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Social Media</div>
-                        <div class="portfolio-title">Monthly Content Planning</div>
+                </article>
+
+                <article class="portfolio-card text-card" data-reveal="card">
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Social media</p>
+                        <h2>Monthly content planning</h2>
+                        <p>Campaign rhythm, post structure, and approvals organized into a more refined monthly system.
+                        </p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Website Refresh</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Web</div>
-                        <div class="portfolio-title">Modern Small Business Pages</div>
+                </article>
+
+                <article class="portfolio-card text-card" data-reveal="card">
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Web</p>
+                        <h2>Modern small business pages</h2>
+                        <p>Website refreshes that trade flat templates for clearer hierarchy and stronger trust cues.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Offer Messaging</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Strategy</div>
-                        <div class="portfolio-title">Clear, Conversion-Ready Copy</div>
+                </article>
+
+                <article class="portfolio-card media-card" data-reveal="card">
+                    <div class="portfolio-media image-two"></div>
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Strategy</p>
+                        <h2>Clear, conversion-ready copy</h2>
+                        <p>Sharper messaging frameworks that support launches, offers, and social storytelling.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Follow-Up Sequences</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Client Retention</div>
-                        <div class="portfolio-title">Simple SMS Follow-Up Journeys</div>
+                </article>
+
+                <article class="portfolio-card text-card wide-card" data-reveal="card">
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Client retention</p>
+                        <h2>Simple SMS follow-up journeys</h2>
+                        <p>Follow-up sequences that feel personal on the surface and efficient behind the scenes.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-placeholder">Launch Support</div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-category">Growth</div>
-                        <div class="portfolio-title">14-Day Trial Onboarding</div>
+                </article>
+
+                <article class="portfolio-card text-card wide-card accent-card" data-reveal="card">
+                    <div class="portfolio-copy">
+                        <p class="eyebrow">Growth</p>
+                        <h2>14-day trial onboarding</h2>
+                        <p>Onboarding touchpoints designed to set expectations, build trust, and move quickly into
+                            execution.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <img src="media/pls.png" alt="Peace Love Social Logo" class="footer-logo">
-        <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="sms-consent.html">SMS Consent</a>
+    <footer class="site-footer">
+        <div class="footer-panel">
+            <div>
+                <p class="eyebrow">Peace Love Social</p>
+                <h2>The boutique studio approach to content, websites, and automation.</h2>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sms-consent.html">SMS Consent</a>
+                </div>
+            </div>
         </div>
     </footer>
 

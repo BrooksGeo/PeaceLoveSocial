@@ -4,106 +4,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peace Love Social | Small Business Marketing and Automation</title>
+    <title>Peace Love Social | Boutique Social Media Agency</title>
     <meta name="description"
         content="Peace Love Social helps small businesses in La Grange and beyond with content, websites, and missed-call text-back automation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <header class="glass-header">
-        <nav>
-            <a href="index.html" class="logo-link"><img src="media/pls.png" alt="Peace Love Social Logo" class="logo-img"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Our Work</a></li>
-            </ul>
+<body class="site-page home-page">
+    <div class="site-bg">
+        <div class="ambient-orb orb-one"></div>
+        <div class="ambient-orb orb-two"></div>
+        <div class="ambient-orb orb-three"></div>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
+                <span class="logo-mark">PLS</span>
+                <span class="logo-copy">
+                    <span class="logo-name">Peace Love Social</span>
+                    <span class="logo-tag">Boutique social media studio</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-shell">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                </ul>
+                <a class="nav-cta" href="#booking">Book a Call</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Small Business Growth, <span class="gradient-text">Peace Love Style</span></h1>
-                <p>Peace Love Social helps busy small businesses look sharp online, respond faster to leads, and stay
-                    consistent without burning out. Funky local vibe, professional systems, real results.</p>
+            <div class="hero-copy" data-reveal="hero">
+                <p class="eyebrow">Editorial strategy. Social-first presence. Boutique execution.</p>
+                <h1>Luxury-caliber social presence for brands that need more than “just posting.”</h1>
+                <p class="hero-text">Peace Love Social helps busy small businesses look sharper online, respond faster to
+                    leads, and show up with the polish of a modern creative studio without building an internal team.</p>
                 <div class="cta-group">
                     <a class="btn btn-primary" href="tel:+19797023269">Call (979) 702-3269</a>
                     <a class="btn btn-secondary" href="mailto:goodtimes@macsdaqs.com">Book a Demo</a>
                 </div>
+                <div class="hero-proof">
+                    <div class="proof-chip">Content systems</div>
+                    <div class="proof-chip">Launch planning</div>
+                    <div class="proof-chip">Lead follow-up automation</div>
+                </div>
             </div>
-            <div class="hero-visual">
-                <!-- Abstract Premium Visual -->
-                <div class="glow-sphere"></div>
+
+            <div class="hero-visual" data-parallax-root>
+                <div class="hero-device" data-parallax="0.08">
+                    <div class="device-topbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="device-content">
+                        <div class="device-label">Featured Brand Story</div>
+                        <h2>Elevated content that looks intentional, cinematic, and sales-ready.</h2>
+                        <div class="device-grid">
+                            <div class="content-tile tile-large"></div>
+                            <div class="content-tile tile-small"></div>
+                            <div class="content-tile tile-small accent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="floating-card stat-card" data-parallax="0.14" data-reveal="card">
+                    <span class="floating-label">Studio snapshot</span>
+                    <strong>+42%</strong>
+                    <p>Faster lead response after missed-call text-back setup.</p>
+                </article>
+
+                <article class="floating-card insight-card" data-parallax="0.1" data-reveal="card">
+                    <span class="floating-label">Monthly rhythm</span>
+                    <ul>
+                        <li>Strategy</li>
+                        <li>Create</li>
+                        <li>Schedule</li>
+                        <li>Refine</li>
+                    </ul>
+                </article>
+
+                <article class="floating-card social-card" data-parallax="0.18" data-reveal="card">
+                    <span class="floating-label">High-touch execution</span>
+                    <p>Brand voice, platform polish, and follow-up systems aligned in one premium workflow.</p>
+                </article>
             </div>
+
+            <a href="#services" class="scroll-cue" aria-label="Scroll to services">
+                <span></span>
+            </a>
         </section>
 
-        <!-- Funky Marquee -->
-        <div class="marquee-container">
-            <div class="marquee-content">
-                PEACE LOVE SOCIAL &nbsp;•&nbsp; CONTENT CREATION &nbsp;•&nbsp; WEB DESIGN &nbsp;•&nbsp; AUTOMATION
-                &nbsp;•&nbsp; STRATEGY &nbsp;•&nbsp; PEACE LOVE SOCIAL &nbsp;•&nbsp; CONTENT CREATION &nbsp;•&nbsp; WEB
-                DESIGN &nbsp;•&nbsp; AUTOMATION &nbsp;•&nbsp; STRATEGY &nbsp;•&nbsp;
+        <div class="marquee-band">
+            <div class="marquee-track">
+                <span>PEACE LOVE SOCIAL</span>
+                <span>CONTENT DIRECTION</span>
+                <span>WEBSITE REFRESHES</span>
+                <span>AUTOMATION SYSTEMS</span>
+                <span>CAMPAIGN PLANNING</span>
+                <span>PEACE LOVE SOCIAL</span>
+                <span>CONTENT DIRECTION</span>
+                <span>WEBSITE REFRESHES</span>
+                <span>AUTOMATION SYSTEMS</span>
+                <span>CAMPAIGN PLANNING</span>
             </div>
         </div>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <div class="section-header">
-                <h2>Your Digital <span class="gradient-text">Glow Up</span></h2>
-                <p>We do more than make things look good. We build practical marketing systems for small businesses that
-                    need more leads, faster follow-up, and less chaos.</p>
+        <section id="services" class="editorial-section services-section">
+            <div class="section-heading split-heading" data-reveal>
+                <div>
+                    <p class="eyebrow">What we shape</p>
+                    <h2>Your digital presence, art-directed and operationalized.</h2>
+                </div>
+                <p>We build practical marketing systems that make small businesses look more established, respond with
+                    more speed, and stay visible with far less chaos behind the scenes.</p>
             </div>
 
             <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="card-icon">✨</div>
+                <article class="service-card" data-reveal="card">
+                    <span class="card-index">01</span>
                     <h3>Content Creation</h3>
-                    <p>Strategic content for social media, promotions, and local visibility. Every post is built to match
-                        your brand and drive action.</p>
-                </div>
+                    <p>Strategic content for social media, promotions, and local visibility with a more polished visual
+                        standard baked into every deliverable.</p>
+                </article>
 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="card-icon">🗓️</div>
+                <article class="service-card" data-reveal="card">
+                    <span class="card-index">02</span>
                     <h3>Campaign Planning</h3>
-                    <p>Monthly content calendars, launches, and promo plans that keep your business visible and your team
-                        aligned.</p>
-                </div>
+                    <p>Monthly calendars, launches, and offer planning that keep your brand presence sharp and your team
+                        aligned on what ships next.</p>
+                </article>
 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="card-icon">💻</div>
+                <article class="service-card" data-reveal="card">
+                    <span class="card-index">03</span>
                     <h3>Website Refreshes</h3>
-                    <p>Modern, mobile-friendly sites with clear messaging and clear calls to action so visitors know
-                        exactly what to do next.</p>
-                </div>
+                    <p>Modern, mobile-friendly website experiences that feel current, premium, and conversion-ready
+                        instead of generic and dated.</p>
+                </article>
 
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="card-icon">💬</div>
+                <article class="service-card" data-reveal="card">
+                    <span class="card-index">04</span>
                     <h3>Lead Follow-Up Automation</h3>
-                    <p>Missed-call text-back and simple follow-up flows that keep leads warm when you are on the floor,
-                        on-site, or after hours.</p>
-                </div>
+                    <p>Missed-call text-back and simple follow-up flows that keep leads warm when your attention is
+                        somewhere else.</p>
+                </article>
             </div>
         </section>
 
-        <section id="pricing" class="pricing-section">
-            <div class="section-header">
-                <h2>Packages That <span class="gradient-text">Actually Fit</span></h2>
-                <p>Simple pricing for small businesses that want steady growth without complicated retainers.</p>
+        <section id="pricing" class="editorial-section pricing-section">
+            <div class="section-heading centered-heading" data-reveal>
+                <p class="eyebrow">Packages</p>
+                <h2>Structured offers with boutique-studio polish.</h2>
+                <p>Simple pricing for small businesses that want consistent visibility and cleaner systems without a
+                    complicated retainer experience.</p>
             </div>
 
             <div class="package-grid">
-                <div class="package-card">
+                <article class="package-card" data-reveal="card">
+                    <p class="package-kicker">Essentials</p>
                     <h3>Starter Social</h3>
                     <p class="package-price">$199<span>/month</span></p>
                     <ul class="package-list">
@@ -113,9 +187,10 @@
                         <li>Caption writing + scheduling</li>
                         <li>Monthly performance summary</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="package-card featured">
+                <article class="package-card featured" data-reveal="card">
+                    <p class="package-kicker">Most Popular</p>
                     <h3>Growth Social</h3>
                     <p class="package-price">$449<span>/month</span></p>
                     <ul class="package-list">
@@ -125,9 +200,10 @@
                         <li>Google Business Profile support</li>
                         <li>30-minute monthly strategy call</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="package-card">
+                <article class="package-card" data-reveal="card">
+                    <p class="package-kicker">Expansion</p>
                     <h3>Pro Growth</h3>
                     <p class="package-price">$899<span>/month</span></p>
                     <ul class="package-list">
@@ -137,110 +213,128 @@
                         <li>Review request messaging setup</li>
                         <li>60-minute monthly strategy call</li>
                     </ul>
+                </article>
+            </div>
+
+            <div class="detail-panels">
+                <article class="detail-card" data-reveal="card">
+                    <h3>Add-Ons and One-Time Services</h3>
+                    <ul class="package-list">
+                        <li><strong>Missed-Call Text-Back:</strong> $129/month + SMS usage fees</li>
+                        <li><strong>Website Build:</strong> $700 one-time setup (3 to 5 page site)</li>
+                        <li><strong>14-Day Trial:</strong> available on one selected service</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card notes-card" data-reveal="card">
+                    <h3>Scope Notes</h3>
+                    <p><strong>Platform managed:</strong> one channel account such as Facebook, Instagram, Google Business
+                        Profile, LinkedIn, or TikTok including copy, scheduling, and basic performance checks.</p>
+                    <p><strong>Monthly content calendar:</strong> a four-week posting plan with dates, themes, captions,
+                        and calls to action delivered before the month starts for approval.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="booking" class="editorial-section booking-section">
+            <div class="booking-layout">
+                <div class="booking-copy" data-reveal>
+                    <p class="eyebrow">Next step</p>
+                    <h2>Book your growth call and let’s build a cleaner monthly marketing system.</h2>
+                    <p>Tell us about your business and we will follow up to schedule your 14-day trial kickoff.</p>
+                    <div class="mini-quote">Premium creative direction with practical local-business systems behind it.</div>
+                </div>
+
+                <div class="booking-card" data-reveal="card">
+                    <form class="booking-form" action="https://formsubmit.co/goodtimes@macsdaqs.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Booking Request - Peace Love Social">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form-row">
+                            <label for="full_name">Full Name</label>
+                            <input id="full_name" name="Full Name" type="text" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="business_name">Business Name</label>
+                            <input id="business_name" name="Business Name" type="text" required>
+                        </div>
+
+                        <div class="form-row split">
+                            <div>
+                                <label for="phone_number">Phone Number</label>
+                                <input id="phone_number" name="Phone Number" type="tel" required>
+                            </div>
+                            <div>
+                                <label for="email_address">Email Address</label>
+                                <input id="email_address" name="Email Address" type="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="service_interest">Primary Service Interest</label>
+                            <select id="service_interest" name="Primary Service Interest" required>
+                                <option value="">Choose one</option>
+                                <option>Starter Social - $199/month</option>
+                                <option>Growth Social - $449/month</option>
+                                <option>Pro Growth - $899/month</option>
+                                <option>Missed-Call Text-Back Add-On - $129/month + usage</option>
+                                <option>Website Build - $700 one-time</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="biggest_challenge">Biggest Marketing Challenge Right Now</label>
+                            <textarea id="biggest_challenge" name="Biggest Challenge" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-row consent-row">
+                            <label class="checkbox-wrap" for="sms_consent">
+                                <input id="sms_consent" name="SMS Consent" type="checkbox" required>
+                                <span>I agree to be contacted by Peace Love Social about my request. Reply STOP to opt
+                                    out. See our <a href="privacy.html">Privacy Policy</a> and <a
+                                        href="sms-consent.html">SMS Terms</a>.</span>
+                            </label>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Send Booking Request</button>
+                    </form>
                 </div>
             </div>
-
-            <div class="addons-card">
-                <h3>Add-Ons and One-Time Services</h3>
-                <ul class="package-list">
-                    <li><strong>Missed-Call Text-Back:</strong> $129/month + SMS usage fees</li>
-                    <li><strong>Website Build:</strong> $700 one-time setup (3 to 5 page site)</li>
-                    <li><strong>14-Day Trial:</strong> available on one selected service</li>
-                </ul>
-            </div>
-
-            <div class="scope-notes">
-                <p><strong>What "platform managed" means:</strong> We manage one channel account (example: Facebook,
-                    Instagram, Google Business Profile, LinkedIn, or TikTok) including copy, scheduling, and basic
-                    performance checks.</p>
-                <p><strong>What "monthly content calendar" means:</strong> A four-week posting plan with post dates,
-                    themes, captions, and CTAs, delivered before the month starts for approval.</p>
-            </div>
         </section>
 
-        <section id="booking" class="booking-section">
-            <div class="section-header">
-                <h2>Book Your <span class="gradient-text">Growth Call</span></h2>
-                <p>Tell us about your business and we will follow up to schedule your 14-day trial kickoff.</p>
-            </div>
-
-            <div class="booking-card">
-                <form class="booking-form" action="https://formsubmit.co/goodtimes@macsdaqs.com" method="POST">
-                    <input type="hidden" name="_subject" value="New Booking Request - Peace Love Social">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-
-                    <div class="form-row">
-                        <label for="full_name">Full Name</label>
-                        <input id="full_name" name="Full Name" type="text" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="business_name">Business Name</label>
-                        <input id="business_name" name="Business Name" type="text" required>
-                    </div>
-
-                    <div class="form-row split">
-                        <div>
-                            <label for="phone_number">Phone Number</label>
-                            <input id="phone_number" name="Phone Number" type="tel" required>
-                        </div>
-                        <div>
-                            <label for="email_address">Email Address</label>
-                            <input id="email_address" name="Email Address" type="email" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="service_interest">Primary Service Interest</label>
-                        <select id="service_interest" name="Primary Service Interest" required>
-                            <option value="">Choose one</option>
-                            <option>Starter Social - $199/month</option>
-                            <option>Growth Social - $449/month</option>
-                            <option>Pro Growth - $899/month</option>
-                            <option>Missed-Call Text-Back Add-On - $129/month + usage</option>
-                            <option>Website Build - $700 one-time</option>
-                        </select>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="biggest_challenge">Biggest Marketing Challenge Right Now</label>
-                        <textarea id="biggest_challenge" name="Biggest Challenge" rows="4" required></textarea>
-                    </div>
-
-                    <div class="form-row consent-row">
-                        <label class="checkbox-wrap" for="sms_consent">
-                            <input id="sms_consent" name="SMS Consent" type="checkbox" required>
-                            <span>I agree to be contacted by Peace Love Social about my request. Reply STOP to opt out.
-                                See our <a href="privacy.html">Privacy Policy</a> and <a href="sms-consent.html">SMS
-                                    Terms</a>.</span>
-                        </label>
-                    </div>
-
-                    <button class="btn btn-primary" type="submit">Send Booking Request</button>
-                </form>
+        <section class="final-cta editorial-section" data-reveal>
+            <div class="cta-panel">
+                <p class="eyebrow">Ready when you are</p>
+                <h2>Grow with less chaos and show up like a brand people instantly trust.</h2>
+                <p>Let us build your monthly marketing system so you can stay focused on running the business.</p>
+                <div class="cta-group">
+                    <a class="btn btn-primary" href="tel:+19797023269">Call (979) 702-3269</a>
+                    <a class="btn btn-secondary" href="mailto:goodtimes@macsdaqs.com">Start Your 14-Day Trial</a>
+                </div>
             </div>
         </section>
+    </main>
 
-        <section class="final-cta">
-            <h2>Ready to Grow With Less Chaos?</h2>
-            <p>Let us build your monthly marketing system so you can focus on running your business.</p>
-            <div class="cta-group">
-                <a class="btn btn-primary" href="tel:+19797023269">Call (979) 702-3269</a>
-                <a class="btn btn-secondary" href="mailto:goodtimes@macsdaqs.com">Start Your 14-Day Trial</a>
+    <footer class="site-footer">
+        <div class="footer-panel">
+            <div>
+                <p class="eyebrow">Peace Love Social</p>
+                <h2>The boutique studio approach to content, websites, and automation.</h2>
             </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="sms-consent.html">SMS Consent</a>
+            <div class="footer-meta">
+                <p>&copy; 2026 Peace Love Social. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sms-consent.html">SMS Consent</a>
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
