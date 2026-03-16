@@ -970,10 +970,18 @@ p {
 }
 
 .image-one {
-    background: url("media/instafeed.png") top center/cover no-repeat;
+    background: url("media/geohome.png") top center/cover no-repeat;
 }
 
 .image-two {
+    background: url("media/blingshop.png") top center/cover no-repeat;
+}
+
+.image-three {
+    background: url("media/instafeed.png") top center/cover no-repeat;
+}
+
+.image-four {
     background: var(--accent-green);
 }
 
