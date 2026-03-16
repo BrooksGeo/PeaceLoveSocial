@@ -511,7 +511,7 @@ p {
 .tile-large {
     grid-row: span 2;
     min-height: 15rem;
-    background: var(--accent-green);
+    background: url("media/instafeed.png") top center/cover no-repeat;
 }
 
 .content-tile.accent {
@@ -970,7 +970,7 @@ p {
 }
 
 .image-one {
-    background: var(--accent-orange);
+    background: url("media/instafeed.png") top center/cover no-repeat;
 }
 
 .image-two {
