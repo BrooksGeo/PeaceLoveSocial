@@ -150,6 +150,12 @@ main {
     min-width: 0;
 }
 
+.logo-img {
+    height: 3.2rem;
+    width: auto;
+    display: block;
+}
+
 .logo-mark {
     width: 2.9rem;
     height: 2.9rem;
@@ -473,9 +479,7 @@ p {
     border-radius: 24px;
     padding: 1.5rem;
     background:
-        linear-gradient(180deg, rgba(255, 251, 248, 0.92), rgba(242, 233, 223, 0.84)),
-        url("media/brooks-realproject4.jpg") center/cover;
-    background-blend-mode: screen, normal;
+        linear-gradient(180deg, rgba(255, 251, 248, 0.92), rgba(242, 233, 223, 0.84));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -520,9 +524,7 @@ p {
     grid-row: span 2;
     min-height: 15rem;
     background:
-        linear-gradient(180deg, rgba(255, 250, 245, 0.52), rgba(255, 250, 245, 0.08)),
-        url("media/brooks-realproject5.jpg") center/cover;
-    background-blend-mode: screen, normal;
+        linear-gradient(180deg, rgba(255, 250, 245, 0.52), rgba(255, 250, 245, 0.08));
 }
 
 .content-tile.accent {
@@ -992,14 +994,12 @@ p {
 
 .image-one {
     background:
-        linear-gradient(180deg, rgba(255, 249, 244, 0.15), rgba(255, 249, 244, 0.12)),
-        url("media/brooks-realproject4.jpg") center/cover;
+        linear-gradient(180deg, rgba(255, 249, 244, 0.95), rgba(255, 249, 244, 0.82));
 }
 
 .image-two {
     background:
-        linear-gradient(180deg, rgba(255, 249, 244, 0.12), rgba(255, 249, 244, 0.16)),
-        url("media/brooks-realproject5.jpg") center/cover;
+        linear-gradient(180deg, rgba(255, 249, 244, 0.92), rgba(255, 249, 244, 0.86));
 }
 
 .portfolio-copy {
