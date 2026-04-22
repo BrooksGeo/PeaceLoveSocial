@@ -12,11 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="preload" as="image" href="media/pls2.png" fetchpriority="high">
     <link rel="stylesheet" href="index.css">
+    <meta name="theme-color" content="#6AC6D3">
 </head>
 
 <body class="site-page home-page">
-    <div class="site-bg">
+    <a class="skip-link" href="#home">Skip to content</a>
+    <div class="site-bg" aria-hidden="true">
         <div class="ambient-orb orb-one"></div>
         <div class="ambient-orb orb-two"></div>
         <div class="ambient-orb orb-three"></div>
@@ -25,7 +28,11 @@
     <header class="site-header">
         <nav class="site-nav">
             <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
-                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img">
+                <video class="logo-video" autoplay loop muted playsinline preload="auto"
+                    poster="media/pls2.png" aria-hidden="true">
+                    <source src="media/Peace.mp4" type="video/mp4">
+                </video>
+                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img logo-img-fallback">
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +45,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Our Work</a></li>
+                    <li><a href="journal.html">Journal</a></li>
                 </ul>
                 <a class="nav-cta" href="#booking">Book a Call</a>
             </div>
@@ -74,9 +82,9 @@
                         <div class="device-label">Featured Transformation</div>
                         <h2>High-vibe social grids that stop the scroll and build trust.</h2>
                         <div class="device-grid">
-                            <div class="content-tile tile-large"></div>
-                            <div class="content-tile tile-small"></div>
-                            <div class="content-tile tile-small accent"></div>
+                            <div class="content-tile tile-large tile-instafeed"></div>
+                            <div class="content-tile tile-small tile-brooks-a"></div>
+                            <div class="content-tile tile-small tile-brooks-b"></div>
                         </div>
                     </div>
                 </div>
@@ -108,8 +116,8 @@
             </a>
         </section>
 
-        <div class="marquee-band">
-            <div class="marquee-track">
+        <div class="marquee-band" aria-label="What we do" role="marquee">
+            <div class="marquee-track" aria-hidden="true">
                 <span>PEACE LOVE SOCIAL</span>
                 <span>CONTENT DIRECTION</span>
                 <span>WEBSITE REFRESHES</span>
@@ -122,6 +130,51 @@
                 <span>CAMPAIGN PLANNING</span>
             </div>
         </div>
+
+        <div class="marquee-band marquee-band--clients" aria-label="Clients we work with">
+            <div class="marquee-track marquee-track--reverse">
+                <span>BROOKS GEOSPATIAL</span>
+                <span>&#x2734;</span>
+                <span>BLINGAGOGO</span>
+                <span>&#x2734;</span>
+                <span>CENTRAL TEXAS HOME SERVICES</span>
+                <span>&#x2734;</span>
+                <span>FAYETTE COUNTY HOSPITALITY</span>
+                <span>&#x2734;</span>
+                <span>LA GRANGE RETAIL</span>
+                <span>&#x2734;</span>
+                <span>BROOKS GEOSPATIAL</span>
+                <span>&#x2734;</span>
+                <span>BLINGAGOGO</span>
+                <span>&#x2734;</span>
+                <span>CENTRAL TEXAS HOME SERVICES</span>
+                <span>&#x2734;</span>
+                <span>FAYETTE COUNTY HOSPITALITY</span>
+                <span>&#x2734;</span>
+                <span>LA GRANGE RETAIL</span>
+            </div>
+        </div>
+
+        <section class="editorial-section stats-section" data-reveal>
+            <div class="stats-grid">
+                <article class="stat-tile" data-reveal="card">
+                    <span class="stat-value" data-count="42" data-suffix="%">0%</span>
+                    <p>Faster lead response after missed-call text-back automation.</p>
+                </article>
+                <article class="stat-tile" data-reveal="card">
+                    <span class="stat-value" data-count="20" data-suffix="+">0</span>
+                    <p>Approved posts per client, shipped on time every month.</p>
+                </article>
+                <article class="stat-tile" data-reveal="card">
+                    <span class="stat-value" data-count="3" data-suffix="">0</span>
+                    <p>Platforms kept aligned with one brand voice and one plan.</p>
+                </article>
+                <article class="stat-tile" data-reveal="card">
+                    <span class="stat-value" data-count="14" data-suffix="-day">0</span>
+                    <p>Trial window on any single service — see the system before you commit.</p>
+                </article>
+            </div>
+        </section>
 
         <section id="services" class="editorial-section services-section">
             <div class="section-heading split-heading" data-reveal>
@@ -161,6 +214,53 @@
                     <p>Missed-call text-back and simple follow-up flows that keep leads warm when your attention is
                         somewhere else.</p>
                 </article>
+            </div>
+        </section>
+
+        <section id="proof" class="editorial-section proof-section">
+            <div class="section-heading split-heading" data-reveal>
+                <div>
+                    <p class="eyebrow">Receipts</p>
+                    <h2>Real small businesses, real momentum.</h2>
+                </div>
+                <p>Every client gets a calendar the month before it ships, automation to keep leads warm, and a studio that answers the phone. Here is what that has looked like.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial-card" data-reveal="card">
+                    <p class="testimonial-quote">"Peace Love Social built the plan, wrote the captions, and stood up a publishing system that actually runs. I drop photos into a folder and the month ships itself — our LinkedIn and Facebook finally look like the brand I've been trying to show clients."</p>
+                    <div class="testimonial-meta">
+                        <strong>Mac Brooks</strong>
+                        <span>Owner, Brooks Geospatial — La Grange, TX</span>
+                    </div>
+                </article>
+                <article class="testimonial-card testimonial-card--accent" data-reveal="card">
+                    <p class="testimonial-quote">"Our grid looks intentional for the first time ever. Peace Love Social took our product photos and turned them into a feed that stops the scroll — and the missed-call text-back has paid for itself every single month."</p>
+                    <div class="testimonial-meta">
+                        <strong>Blingagogo</strong>
+                        <span>Boutique retail — Central Texas</span>
+                    </div>
+                </article>
+                <article class="testimonial-card" data-reveal="card">
+                    <p class="testimonial-quote">"We went from posting once a week in a panic to a calendar that looks like a brand — not a scramble. Peace Love Social answers the phone, ships on time, and treats us like their only client."</p>
+                    <div class="testimonial-meta">
+                        <strong>Growth Social client</strong>
+                        <span>Fayette County hospitality</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="trust-band" data-reveal>
+                <span>Trusted by local brands</span>
+                <ul class="trust-list">
+                    <li>Brooks Geospatial</li>
+                    <li>·</li>
+                    <li>Blingagogo</li>
+                    <li>·</li>
+                    <li>Central Texas Home Services</li>
+                    <li>·</li>
+                    <li>Fayette County Hospitality</li>
+                </ul>
             </div>
         </section>
 

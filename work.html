@@ -13,10 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <meta name="theme-color" content="#6AC6D3">
 </head>
 
 <body class="site-page interior-page">
-    <div class="site-bg">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-bg" aria-hidden="true">
         <div class="ambient-orb orb-one"></div>
         <div class="ambient-orb orb-two"></div>
         <div class="ambient-orb orb-three"></div>
@@ -25,7 +27,11 @@
     <header class="site-header">
         <nav class="site-nav">
             <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
-                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img">
+                <video class="logo-video" autoplay loop muted playsinline preload="auto"
+                    poster="media/pls2.png" aria-hidden="true">
+                    <source src="media/Peace.mp4" type="video/mp4">
+                </video>
+                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img logo-img-fallback">
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,18 +44,51 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html" class="active">Our Work</a></li>
+                    <li><a href="journal.html">Journal</a></li>
                 </ul>
                 <a class="nav-cta" href="index.html#booking">Book a Call</a>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-hero" data-reveal="hero">
             <div class="page-hero-copy">
                 <p class="eyebrow">Selected capabilities</p>
                 <h1>Work that combines brand polish, social strategy, and operational clarity.</h1>
                 <p>How we help small businesses look better, respond faster, and grow with less manual effort.</p>
+            </div>
+        </section>
+
+        <section class="page-shell before-after-section" data-reveal="card" aria-label="Before and after example">
+            <div class="before-after-heading">
+                <p class="eyebrow">Before &amp; after</p>
+                <h2>Raw field work, finished like a brand.</h2>
+                <p>Drag the handle to compare a raw aerial capture from a Brooks Geospatial project against the finished, social-ready frame we publish for them.</p>
+            </div>
+            <div class="before-after"
+                 role="slider"
+                 tabindex="0"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 aria-valuenow="50"
+                 aria-label="Drag to compare before and after">
+                <img class="before-after-img before-after-img--base"
+                     src="media/brooks-realproject5.jpg"
+                     alt="Raw aerial capture before editing"
+                     loading="lazy">
+                <div class="before-after-clip">
+                    <img class="before-after-img before-after-img--overlay"
+                         src="media/brooks-realproject4.jpg"
+                         alt="Finished, social-ready frame"
+                         loading="lazy">
+                </div>
+                <div class="before-after-handle" aria-hidden="true">
+                    <span class="before-after-handle-arrow before-after-handle-arrow--left"></span>
+                    <span class="before-after-handle-arrow before-after-handle-arrow--right"></span>
+                </div>
+                <span class="before-after-label before-after-label--before" aria-hidden="true">Raw</span>
+                <span class="before-after-label before-after-label--after" aria-hidden="true">Published</span>
             </div>
         </section>
 

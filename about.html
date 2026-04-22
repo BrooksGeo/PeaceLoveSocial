@@ -13,10 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <meta name="theme-color" content="#6AC6D3">
 </head>
 
 <body class="site-page interior-page">
-    <div class="site-bg">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-bg" aria-hidden="true">
         <div class="ambient-orb orb-one"></div>
         <div class="ambient-orb orb-two"></div>
         <div class="ambient-orb orb-three"></div>
@@ -25,7 +27,11 @@
     <header class="site-header">
         <nav class="site-nav">
             <a href="index.html" class="logo-link" aria-label="Peace Love Social home">
-                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img">
+                <video class="logo-video" autoplay loop muted playsinline preload="auto"
+                    poster="media/pls2.png" aria-hidden="true">
+                    <source src="media/Peace.mp4" type="video/mp4">
+                </video>
+                <img src="media/pls2.png" alt="Peace Love Social" class="logo-img logo-img-fallback">
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +44,14 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="work.html">Our Work</a></li>
+                    <li><a href="journal.html">Journal</a></li>
                 </ul>
                 <a class="nav-cta" href="index.html#booking">Book a Call</a>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-hero" data-reveal="hero">
             <div class="page-hero-copy">
                 <p class="eyebrow">About the studio</p>
@@ -73,7 +80,7 @@
             <article class="editorial-panel wide-panel" data-reveal="card">
                 <div class="owner-layout">
                     <div class="owner-media">
-                        <img src="media/us.png" alt="Owners of Peace Love Social" class="owner-img">
+                        <img src="media/us.png" alt="The owners of Peace Love Social, Mac and his partner" class="owner-img" loading="lazy" decoding="async">
                     </div>
                     <div class="owner-copy">
                         <p class="eyebrow">The Owners</p>
